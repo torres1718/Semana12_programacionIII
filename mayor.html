@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='estilos.css') }}">
+    <title>MAYOR</title>
+    <script type = "text/javascript" 
+         src = "{{ url_for('static', filename = 'num_mayor.js') }}" ></script>
+
+</head>
+
+<body action="numeros" method="POST">
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarExample01"
+                    aria-controls="navbarExample01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarExample01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" aria-current="page" type="button"  href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" type="button"  href="/mayor">Mayor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" type="button"  href="/sanMiguel">San Miguel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" type="button"  href="/enlaces">Enlaces</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+     
+        
+     
+       <script>
+        const numero1 = parseInt(prompt("Ingrese el  numero 1"));
+        const numero2=parseInt(prompt("Ingrese el numero 2"));
+        if(numero1>numero2){
+            alert("El numero mayor es: "+numero1);
+        }else{
+            alert("El numero mayor es: "+numero2);
+        }
+    </script>
+     <center><img class ="java" src="https://th.bing.com/th/id/R.6a4c201cef84c174d0d93923f26b168c?rik=2qXm14srQFLukg&pid=ImgRaw&r=0" alt="Usando JavaScript" ></center>
+</body>
+</html>

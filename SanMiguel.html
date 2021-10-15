@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='estilos.css') }}">
+    <title>SAN MIGUEL</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarExample01"
+                    aria-controls="navbarExample01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarExample01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" aria-current="page" type="button"  href="/">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" type="button"  href="/mayor">Mayor</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" type="button"  href="/sanMiguel">San Miguel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" type="button"  href="/enlaces">Enlaces</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <form id="sm" action = "{{url_for('sanMiguel')}}" method = "POST"  >
+        <div class="contenido">
+            <h1>Historia de San Miguel</h1>
+            <br>
+            <p>El territorio fue poblado originalmente por grupos lencas. Tras la fundación de la villa de San Salvador en 1525, los españoles encomendaron al capitán Luis de Moscoso la fundación de San Miguel de la Frontera, la cual tuvo lugar en 1530.
+
+               En 1865, durante el Gobierno de Francisco Dueñas, fue determinado que el departamento redujera su dimensión y se creara a expensas del territorio los departamentos de La Unión y Usulután.
+            
+             Entre las figuras políticas notables originarias de este departamento se encuentran el Capitán General Gerardo Barrios, y el Capitán General Miguel Santín del Castillo, quienes en sendos periodos presidenciales hicieron contribuciones importantes como la introducción de la educación normal y las escuelas públicas; y el fomento al cultivo industrializado del café.</p>
+
+             
+             <br>
+             
+        <img src="https://th.bing.com/th/id/R.c14bf6072c7282beeca10be8f179e033?rik=hNr5Kel6ZJKciw&riu=http%3a%2f%2fcdn-pro.elsalvador.com%2fwp-content%2fuploads%2f2017%2f01%2f30185217%2f1476487127734-1024x576.jpg&ehk=QKfRNuCb3o5qF%2f%2bo3tHOw2Kq1sz7hzUgHpqkOhORGJk%3d&risl=&pid=ImgRaw&r=0" alt="Catedral de San Miguel" width="550px" height="350px">
+            </div>
+  
+        </form>
+</body>
+</html>
